@@ -275,7 +275,7 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <show>protected</show>
+                            <show>private</show>
                             <doclint>none</doclint>
                         </configuration>
                     </plugin>
