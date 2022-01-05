@@ -41,7 +41,7 @@ jobs:
           java-version: ${{ matrix.jdk-version }}
           cache: 'maven'
       - name: Get core Maven package
-        run: https://github.com/rk0cc/josev-core.git
+        run: git clone https://github.com/rk0cc/josev-core.git # Do not use this when core releases to central
       - name: Install core package
         id: josev-core-install
         working-directory: './josev-core'
