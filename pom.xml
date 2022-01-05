@@ -31,7 +31,7 @@
     <artifactId>josev-pub</artifactId>
     <version>1.0.1-SNAPSHOT</version>
 
-    <inceptionYear>2021</inceptionYear>
+    <inceptionYear>2022</inceptionYear>
 
     <scm>
         <url>https://github.com/rk0cc/josev-pub/tree/main</url>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>xyz.rk0cc.josev</groupId>
             <artifactId>josev-core</artifactId>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
