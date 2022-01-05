@@ -18,6 +18,19 @@ final class PubSemVerConstraintTest {
         assertDoesNotThrow(() -> PubSemVerConstraint.parse(">=1.0.0"));
         assertDoesNotThrow(() -> PubSemVerConstraint.parse("<=1.0.0"));
         assertDoesNotThrow(() -> PubSemVerConstraint.parse(null));
+        assertDoesNotThrow(() -> PubSemVerConstraint.parse("any"));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> PubSemVerConstraint.parse(PubConstraintPattern.ANY, "^3.0.0")
+        );
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> PubSemVerConstraint.parse(PubConstraintPattern.TRADITIONAL, "<3.0.1 >4.0.2")
+        );
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> PubSemVerConstraint.parse(PubConstraintPattern.TRADITIONAL, "<=3.0.1 >2.0.2")
+        );
     }
 
     @DisplayName("Test parsing from parent class")
