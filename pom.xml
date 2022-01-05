@@ -29,10 +29,11 @@
 
     <groupId>xyz.rk0cc.josev</groupId>
     <artifactId>josev-pub</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
+
+    <inceptionYear>2021</inceptionYear>
 
     <scm>
-        <tag>main</tag>
         <url>https://github.com/rk0cc/josev-pub/tree/main</url>
         <connection>scm:git:git://github.com/rk0cc/josev-pub.git</connection>
         <developerConnection>scm:git:git://github.com/rk0cc/josev-pub.git</developerConnection>
