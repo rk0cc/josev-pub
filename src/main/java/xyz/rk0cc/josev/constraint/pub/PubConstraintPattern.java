@@ -4,6 +4,7 @@ import xyz.rk0cc.josev.SemVer;
 import xyz.rk0cc.josev.constraint.ConstraintPattern;
 
 import javax.annotation.Nonnull;
+import java.util.function.Function;
 import java.util.regex.Pattern;
 
 /**
@@ -64,15 +65,12 @@ public enum PubConstraintPattern implements ConstraintPattern<PubConstraintPatte
     }
 
     /**
-     * Get a {@link Pattern} that allowing to generate {@link Pattern#matcher(CharSequence)} for validation in pub
-     * package dependency.
-     *
-     * @return Allowing to parse {@link SemVer} as <code>null</code>.
+     * {@inheritDoc}
      */
     @Nonnull
     @Override
-    public Pattern constraintPattern() {
-        return constraintPattern;
+    public Function<String, Boolean> conditionFunction() {
+        return s -> constraintPattern.matcher(s).matches();
     }
 
     /**
