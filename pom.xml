@@ -214,6 +214,9 @@
                         <configuration>
                             <show>protected</show>
                             <doclint>none</doclint>
+                            <links>
+                                <link>https://osp.rk0cc.xyz/javadoc/josev/josev-core/1.0.1/</link>
+                            </links>
                         </configuration>
                     </plugin>
                     <plugin>
