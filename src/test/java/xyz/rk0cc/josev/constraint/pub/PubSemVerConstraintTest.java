@@ -2,14 +2,7 @@ package xyz.rk0cc.josev.constraint.pub;
 
 import org.junit.jupiter.api.*;
 import xyz.rk0cc.josev.NonStandardSemVerException;
-import xyz.rk0cc.josev.SemVer;
 import xyz.rk0cc.josev.constraint.SemVerConstraint;
-
-import javax.annotation.Nonnull;
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
