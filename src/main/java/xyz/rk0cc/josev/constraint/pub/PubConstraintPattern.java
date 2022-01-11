@@ -4,7 +4,7 @@ import xyz.rk0cc.josev.SemVer;
 import xyz.rk0cc.josev.constraint.ConstraintPattern;
 
 import javax.annotation.Nonnull;
-import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
 /**
@@ -69,7 +69,7 @@ public enum PubConstraintPattern implements ConstraintPattern<PubConstraintPatte
      */
     @Nonnull
     @Override
-    public Function<String, Boolean> conditionFunction() {
+    public Predicate<String> conditionFunction() {
         return s -> constraintPattern.matcher(s).matches();
     }
 
