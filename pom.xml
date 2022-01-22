@@ -29,7 +29,7 @@
 
     <groupId>xyz.rk0cc.josev</groupId>
     <artifactId>josev-pub</artifactId>
-    <version>3.0.2</version>
+    <version>3.0.3</version>
 
     <inceptionYear>2022</inceptionYear>
 
@@ -58,7 +58,8 @@
         <dependency>
             <groupId>xyz.rk0cc.josev</groupId>
             <artifactId>josev-core</artifactId>
-            <version>3.1.0</version>
+            <version>3.1.1</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.code.findbugs</groupId>

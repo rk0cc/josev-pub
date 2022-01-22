@@ -5,6 +5,23 @@
 
 Read pub (Dart/Flutter) version constraint information for JOSEV.
 
+## Install
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>xyz.rk0cc.josev</groupId>
+        <artifactId>josev-core</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+    <dependency>
+        <groupId>xyz.rk0cc.josev</groupId>
+        <artifactId>josev-pub</artifactId>
+        <version>3.0.3</version>
+    </dependency>
+</dependencies>
+```
+
 ## License
 
 MIT
